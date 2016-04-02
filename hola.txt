@@ -1,16 +1,490 @@
-probando Git
-1.3 Adding & Committing
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+Se instalarán los siguientes paquetes NUEVOS:
+  git git-man liberror-perl
+0 actualizados, 3 se instalarán, 0 para eliminar y 68 no actualizados.
+Se necesita descargar 21,1 kB/3.306 kB de archivos.
+Se utilizarán 21,9 MB de espacio de disco adicional después de esta operación.
+¿Desea continuar? [S/n] s
+0% [Conectando a pe.archive.ubuntu.com]^Cucsp@ucsp-ThinkCentre-M73z:~$ 
+ucsp@ucsp-ThinkCentre-M73z:~$ git --version
+El programa «git» no está instalado. Puede instalarlo escribiendo:
+sudo apt-get install git
+ucsp@ucsp-ThinkCentre-M73z:~$ sudo apt-get update --fix-missing
+Obj http://ppa.launchpad.net trusty InRelease
+Des:1 http://security.ubuntu.com trusty-security InRelease [65,9 kB]           
+Ign http://extras.ubuntu.com trusty InRelease                                  
+Obj http://ppa.launchpad.net trusty/main amd64 Packages                        
+Obj http://ppa.launchpad.net trusty/main i386 Packages                         
+Obj http://extras.ubuntu.com trusty Release.gpg                                
+Obj http://ppa.launchpad.net trusty/main Translation-en                        
+Obj http://extras.ubuntu.com trusty Release                                    
+Des:2 http://security.ubuntu.com trusty-security/main Sources [110 kB]         
+Obj http://extras.ubuntu.com trusty/main Sources                               
+Obj http://extras.ubuntu.com trusty/main amd64 Packages                        
+Obj http://extras.ubuntu.com trusty/main i386 Packages                         
+Des:3 http://security.ubuntu.com trusty-security/restricted Sources [4.035 B]  
+Des:4 http://security.ubuntu.com trusty-security/universe Sources [34,7 kB]    
+Des:5 http://security.ubuntu.com trusty-security/multiverse Sources [2.750 B]  
+Des:6 http://security.ubuntu.com trusty-security/main amd64 Packages [449 kB]  
+Ign http://extras.ubuntu.com trusty/main Translation-es_PE                     
+Ign http://extras.ubuntu.com trusty/main Translation-es                        
+Ign http://extras.ubuntu.com trusty/main Translation-en                
+Des:7 http://security.ubuntu.com trusty-security/restricted amd64 Packages [13,0 kB]
+Des:8 http://security.ubuntu.com trusty-security/universe amd64 Packages [126 kB]
+Des:9 http://security.ubuntu.com trusty-security/multiverse amd64 Packages [4.991 B]
+Des:10 http://security.ubuntu.com trusty-security/main i386 Packages [423 kB]  
+Des:11 http://security.ubuntu.com trusty-security/restricted i386 Packages [12,7 kB]
+Des:12 http://security.ubuntu.com trusty-security/universe i386 Packages [126 kB]
+Des:13 http://security.ubuntu.com trusty-security/multiverse i386 Packages [5.175 B]
+Obj http://security.ubuntu.com trusty-security/main Translation-en             
+Obj http://security.ubuntu.com trusty-security/multiverse Translation-en       
+Obj http://security.ubuntu.com trusty-security/restricted Translation-en       
+Obj http://security.ubuntu.com trusty-security/universe Translation-en         
+Err http://pe.archive.ubuntu.com trusty InRelease                              
+  
+Err http://pe.archive.ubuntu.com trusty-updates InRelease
+  
+Err http://pe.archive.ubuntu.com trusty-backports InRelease
+  
+Err http://pe.archive.ubuntu.com trusty Release.gpg
+  No se pudo resolver «pe.archive.ubuntu.com»
+Err http://pe.archive.ubuntu.com trusty-updates Release.gpg
+  No se pudo resolver «pe.archive.ubuntu.com»
+Err http://pe.archive.ubuntu.com trusty-backports Release.gpg
+  No se pudo resolver «pe.archive.ubuntu.com»
+Descargados 1.377 kB en 39seg. (34,6 kB/s)
+Leyendo lista de paquetes... Hecho
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty/InRelease  
 
-I created a file called octocat.txt in the octobox repository for you (as you can see in the browser below).
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-updates/InRelease  
 
-You should run the git status command again to see how the repository status has changed:
-1.3 Adding & Committing
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-backports/InRelease  
 
-I created a file called octocat.txt in the octobox repository for you (as you can see in the browser below).
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty/Release.gpg  No se pudo resolver «pe.archive.ubuntu.com»
 
-You should run the git status command again to see how the repository status has changed:
-1.3 Adding & Committing
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-updates/Release.gpg  No se pudo resolver «pe.archive.ubuntu.com»
 
-I created a file called octocat.txt in the octobox repository for you (as you can see in the browser below).
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-backports/Release.gpg  No se pudo resolver «pe.archive.ubuntu.com»
 
-You should run the git status command again to see how the repository status has changed:
+W: Algunos archivos de índice fallaron al descargar. Se han ignorado, o se han utilizado unos antiguos en su lugar
+ucsp@ucsp-ThinkCentre-M73z:~$ git --version
+El programa «git» no está instalado. Puede instalarlo escribiendo:
+sudo apt-get install git
+ucsp@ucsp-ThinkCentre-M73z:~$ git --version
+El programa «git» no está instalado. Puede instalarlo escribiendo:
+sudo apt-get install git
+ucsp@ucsp-ThinkCentre-M73z:~$ sudo apt-get update
+Obj http://ppa.launchpad.net trusty InRelease
+Obj http://security.ubuntu.com trusty-security InRelease                       
+Ign http://extras.ubuntu.com trusty InRelease                                  
+Obj http://security.ubuntu.com trusty-security/main Sources                    
+Obj http://extras.ubuntu.com trusty Release.gpg                                
+Obj http://security.ubuntu.com trusty-security/restricted Sources              
+Obj http://security.ubuntu.com trusty-security/universe Sources                
+Obj http://extras.ubuntu.com trusty Release                                    
+Obj http://ppa.launchpad.net trusty/main amd64 Packages                        
+Obj http://security.ubuntu.com trusty-security/multiverse Sources              
+Obj http://extras.ubuntu.com trusty/main Sources                               
+Obj http://ppa.launchpad.net trusty/main i386 Packages                         
+Obj http://security.ubuntu.com trusty-security/main amd64 Packages             
+Obj http://security.ubuntu.com trusty-security/restricted amd64 Packages       
+Obj http://extras.ubuntu.com trusty/main amd64 Packages                        
+Obj http://ppa.launchpad.net trusty/main Translation-en                        
+Obj http://security.ubuntu.com trusty-security/universe amd64 Packages         
+Obj http://extras.ubuntu.com trusty/main i386 Packages                         
+Obj http://security.ubuntu.com trusty-security/multiverse amd64 Packages       
+Obj http://security.ubuntu.com trusty-security/main i386 Packages              
+Obj http://security.ubuntu.com trusty-security/restricted i386 Packages        
+Obj http://security.ubuntu.com trusty-security/universe i386 Packages          
+Obj http://security.ubuntu.com trusty-security/multiverse i386 Packages        
+Obj http://security.ubuntu.com trusty-security/main Translation-en             
+Obj http://security.ubuntu.com trusty-security/multiverse Translation-en       
+Obj http://security.ubuntu.com trusty-security/restricted Translation-en       
+Obj http://security.ubuntu.com trusty-security/universe Translation-en         
+Ign http://extras.ubuntu.com trusty/main Translation-es_PE                     
+Ign http://extras.ubuntu.com trusty/main Translation-es            
+Ign http://extras.ubuntu.com trusty/main Translation-en
+Err http://pe.archive.ubuntu.com trusty InRelease                              
+  
+Err http://pe.archive.ubuntu.com trusty-updates InRelease
+  
+Err http://pe.archive.ubuntu.com trusty-backports InRelease
+  
+Err http://pe.archive.ubuntu.com trusty Release.gpg
+  No se pudo resolver «pe.archive.ubuntu.com»
+Err http://pe.archive.ubuntu.com trusty-updates Release.gpg
+  No se pudo resolver «pe.archive.ubuntu.com»
+Err http://pe.archive.ubuntu.com trusty-backports Release.gpg
+  No se pudo resolver «pe.archive.ubuntu.com»
+Leyendo lista de paquetes... Hecho
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty/InRelease  
+
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-updates/InRelease  
+
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-backports/InRelease  
+
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty/Release.gpg  No se pudo resolver «pe.archive.ubuntu.com»
+
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-updates/Release.gpg  No se pudo resolver «pe.archive.ubuntu.com»
+
+W: Imposible obtener http://pe.archive.ubuntu.com/ubuntu/dists/trusty-backports/Release.gpg  No se pudo resolver «pe.archive.ubuntu.com»
+
+W: Algunos archivos de índice fallaron al descargar. Se han ignorado, o se han utilizado unos antiguos en su lugar
+ucsp@ucsp-ThinkCentre-M73z:~$ git --version
+El programa «git» no está instalado. Puede instalarlo escribiendo:
+sudo apt-get install git
+ucsp@ucsp-ThinkCentre-M73z:~$ git --version
+El programa «git» no está instalado. Puede instalarlo escribiendo:
+sudo apt-get install git
+ucsp@ucsp-ThinkCentre-M73z:~$ sudo apt-get update --fix-missing
+Obj http://ppa.launchpad.net trusty InRelease
+Ign http://archive.canonical.com trusty InRelease                              
+Ign http://archive.ubuntu.com trusty InRelease                                 
+Ign http://extras.ubuntu.com trusty InRelease                                  
+Obj http://archive.ubuntu.com trusty-updates InRelease                         
+Obj http://ppa.launchpad.net trusty/main amd64 Packages                        
+Obj http://archive.canonical.com trusty Release.gpg                            
+Obj http://extras.ubuntu.com trusty Release.gpg                                
+Obj http://archive.ubuntu.com trusty-backports InRelease                       
+Obj http://ppa.launchpad.net trusty/main i386 Packages                         
+Obj http://archive.canonical.com trusty Release                                
+Obj http://archive.ubuntu.com trusty-security InRelease                        
+Obj http://extras.ubuntu.com trusty Release                                    
+Obj http://archive.ubuntu.com trusty Release.gpg                               
+Obj http://ppa.launchpad.net trusty/main Translation-en                        
+Obj http://archive.canonical.com trusty/partner Sources                        
+Obj http://archive.ubuntu.com trusty-updates/main Sources                      
+Obj http://archive.canonical.com trusty/partner amd64 Packages                 
+Obj http://archive.ubuntu.com trusty-updates/restricted Sources                
+Obj http://archive.ubuntu.com trusty-updates/universe Sources                  
+Obj http://archive.canonical.com trusty/partner i386 Packages                  
+Obj http://archive.ubuntu.com trusty-updates/multiverse Sources                
+Obj http://extras.ubuntu.com trusty/main Sources                               
+Obj http://archive.canonical.com trusty/partner Translation-en                 
+Obj http://archive.ubuntu.com trusty-updates/main amd64 Packages               
+Obj http://archive.ubuntu.com trusty-updates/restricted amd64 Packages      
+Obj http://extras.ubuntu.com trusty/main amd64 Packages                   
+Obj http://archive.ubuntu.com trusty-updates/universe amd64 Packages   
+Obj http://extras.ubuntu.com trusty/main i386 Packages                      
+Obj http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages 
+Obj http://archive.ubuntu.com trusty-updates/main i386 Packages            
+Obj http://archive.ubuntu.com trusty-updates/restricted i386 Packages       
+Obj http://archive.ubuntu.com trusty-updates/universe i386 Packages       
+Obj http://archive.ubuntu.com trusty-updates/multiverse i386 Packages       
+Obj http://archive.ubuntu.com trusty-updates/main Translation-en           
+Obj http://archive.ubuntu.com trusty-updates/multiverse Translation-en         
+Obj http://archive.ubuntu.com trusty-updates/restricted Translation-en         
+Obj http://archive.ubuntu.com trusty-updates/universe Translation-en           
+Obj http://archive.ubuntu.com trusty-backports/main Sources                    
+Obj http://archive.ubuntu.com trusty-backports/restricted Sources         
+Obj http://archive.ubuntu.com trusty-backports/universe Sources       
+Obj http://archive.ubuntu.com trusty-backports/multiverse Sources        
+Obj http://archive.ubuntu.com trusty-backports/main amd64 Packages        
+Obj http://archive.ubuntu.com trusty-backports/restricted amd64 Packages   
+Obj http://archive.ubuntu.com trusty-backports/universe amd64 Packages 
+Obj http://archive.ubuntu.com trusty-backports/multiverse amd64 Packages  
+Obj http://archive.ubuntu.com trusty-backports/main i386 Packages          
+Obj http://archive.ubuntu.com trusty-backports/restricted i386 Packages    
+Obj http://archive.ubuntu.com trusty-backports/universe i386 Packages  
+Ign http://extras.ubuntu.com trusty/main Translation-es_PE                
+Obj http://archive.ubuntu.com trusty-backports/multiverse i386 Packages
+Obj http://archive.ubuntu.com trusty-backports/main Translation-en         
+Ign http://extras.ubuntu.com trusty/main Translation-es                        
+Obj http://archive.ubuntu.com trusty-backports/multiverse Translation-en
+Obj http://archive.ubuntu.com trusty-backports/restricted Translation-en       
+Ign http://extras.ubuntu.com trusty/main Translation-en                      
+Obj http://archive.ubuntu.com trusty-backports/universe Translation-en
+Obj http://archive.ubuntu.com trusty-security/main Sources
+Obj http://archive.ubuntu.com trusty-security/restricted Sources
+Obj http://archive.ubuntu.com trusty-security/universe Sources         
+Obj http://archive.ubuntu.com trusty-security/multiverse Sources
+Obj http://archive.ubuntu.com trusty-security/main amd64 Packages
+Obj http://archive.ubuntu.com trusty-security/restricted amd64 Packages
+Obj http://archive.ubuntu.com trusty-security/universe amd64 Packages
+Obj http://archive.ubuntu.com trusty-security/multiverse amd64 Packages
+Obj http://archive.ubuntu.com trusty-security/main i386 Packages
+Obj http://archive.ubuntu.com trusty-security/restricted i386 Packages
+Obj http://archive.ubuntu.com trusty-security/universe i386 Packages
+Obj http://archive.ubuntu.com trusty-security/multiverse i386 Packages         
+Obj http://archive.ubuntu.com trusty-security/main Translation-en              
+Obj http://archive.ubuntu.com trusty-security/multiverse Translation-en        
+Obj http://archive.ubuntu.com trusty-security/restricted Translation-en        
+Obj http://archive.ubuntu.com trusty-security/universe Translation-en          
+Obj http://archive.ubuntu.com trusty Release                                   
+Obj http://archive.ubuntu.com trusty/main Sources                              
+Obj http://archive.ubuntu.com trusty/restricted Sources                        
+Obj http://archive.ubuntu.com trusty/universe Sources                          
+Obj http://archive.ubuntu.com trusty/multiverse Sources                        
+Obj http://archive.ubuntu.com trusty/main amd64 Packages                       
+Obj http://archive.ubuntu.com trusty/restricted amd64 Packages                 
+Obj http://archive.ubuntu.com trusty/universe amd64 Packages                   
+Obj http://archive.ubuntu.com trusty/multiverse amd64 Packages                 
+Obj http://archive.ubuntu.com trusty/main i386 Packages                        
+Obj http://archive.ubuntu.com trusty/restricted i386 Packages                  
+Obj http://archive.ubuntu.com trusty/universe i386 Packages                    
+Obj http://archive.ubuntu.com trusty/multiverse i386 Packages                  
+Obj http://archive.ubuntu.com trusty/main Translation-es                       
+Obj http://archive.ubuntu.com trusty/main Translation-en                       
+Obj http://archive.ubuntu.com trusty/multiverse Translation-es                 
+Obj http://archive.ubuntu.com trusty/multiverse Translation-en                 
+Obj http://archive.ubuntu.com trusty/restricted Translation-es                 
+Obj http://archive.ubuntu.com trusty/restricted Translation-en                 
+Obj http://archive.ubuntu.com trusty/universe Translation-es                   
+Obj http://archive.ubuntu.com trusty/universe Translation-en                   
+Ign http://archive.ubuntu.com trusty/main Translation-es_PE                    
+Ign http://archive.ubuntu.com trusty/multiverse Translation-es_PE              
+Ign http://archive.ubuntu.com trusty/restricted Translation-es_PE              
+Ign http://archive.ubuntu.com trusty/universe Translation-es_PE                
+Leyendo lista de paquetes... Hecho                                             
+ucsp@ucsp-ThinkCentre-M73z:~$ git --version
+El programa «git» no está instalado. Puede instalarlo escribiendo:
+sudo apt-get install git
+ucsp@ucsp-ThinkCentre-M73z:~$ sudo apt-get install git
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+Se instalarán los siguientes paquetes extras:
+  git-man liberror-perl
+Paquetes sugeridos:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+Se instalarán los siguientes paquetes NUEVOS:
+  git git-man liberror-perl
+0 actualizados, 3 se instalarán, 0 para eliminar y 66 no actualizados.
+Se necesita descargar 21,1 kB/3.306 kB de archivos.
+Se utilizarán 21,9 MB de espacio de disco adicional después de esta operación.
+¿Desea continuar? [S/n] s
+Des:1 http://archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21,1 kB]
+Descargados 21,1 kB en 0seg. (36,6 kB/s)
+Seleccionando el paquete liberror-perl previamente no seleccionado.
+(Leyendo la base de datos ... 167518 ficheros o directorios instalados actualmente.)
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Seleccionando el paquete git-man previamente no seleccionado.
+Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.3_all.deb ...
+Unpacking git-man (1:1.9.1-1ubuntu0.3) ...
+Seleccionando el paquete git previamente no seleccionado.
+Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.3_amd64.deb ...
+Unpacking git (1:1.9.1-1ubuntu0.3) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Configurando liberror-perl (0.17-1.1) ...
+Configurando git-man (1:1.9.1-1ubuntu0.3) ...
+Configurando git (1:1.9.1-1ubuntu0.3) ...
+ucsp@ucsp-ThinkCentre-M73z:~$ git --version
+git version 1.9.1
+ucsp@ucsp-ThinkCentre-M73z:~$ git hel'p
+> ^C
+ucsp@ucsp-ThinkCentre-M73z:~$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+ucsp@ucsp-ThinkCentre-M73z:~$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+ucsp@ucsp-ThinkCentre-M73z:~$ clear
+
+ucsp@ucsp-ThinkCentre-M73z:~$ git config --global user.email "jerikerl10@gmail.com"
+ucsp@ucsp-ThinkCentre-M73z:~$ git config --global user.email "jerikerl10@gmail.com"
+ucsp@ucsp-ThinkCentre-M73z:~$ mkdir git-repo1
+ucsp@ucsp-ThinkCentre-M73z:~$ cd git-repo1/
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$  git init
+Initialized empty Git repository in /home/ucsp/git-repo1/.git/
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git status
+En la rama master
+
+Commit inicial
+
+nada que hacer (crear/copiar archivos y utilice «git add» para continuar)
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ nano hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ gedit hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ ls
+hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git status
+En la rama master
+
+Commit inicial
+
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir lo que se ha de ejecutar)
+
+	hola.txt
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git add hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ ls
+hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git diff
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git add hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git status
+En la rama master
+
+Commit inicial
+
+Cambios para hacer commit:
+  (use «git rm --cached <archivo>...« para eliminar stage)
+
+	new file:   hola.txt
+
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git commit -m "Mi primir commit"
+[master (root-commit) 183287c] Mi primir commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$  
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git status
+En la rama master
+nothing to commit, working directory clean
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git log
+commit 183287c63ba58d58fe1d57af0f435ba3892889f0
+Author: ucsp <jerikerl10@gmail.com>
+Date:   Sat Apr 2 13:20:12 2016 -0500
+
+    Mi primir commit
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ gedit hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ gedit hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git status
+En la rama master
+Cambios no preparados para el commit:
+  (use «git add <archivo>...» para actualizar lo que se ejecutará)
+  (use «git checkout -- <archivo>...« para descartar cambios en le directorio de trabajo)
+
+	modificado: hola.txt
+
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir lo que se ha de ejecutar)
+
+	hola.txt~
+
+no hay cambios agregados al commit (use «git add» o «git commit -a»)
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git diff
+diff --git a/hola.txt b/hola.txt
+index dc866bc..429d20b 100644
+--- a/hola.txt
++++ b/hola.txt
+@@ -1 +1,16 @@
+ probando Git
++1.3 Adding & Committing
++
++I created a file called octocat.txt in the octobox repository for you (as you can see in the browser below).
++
++You should run the git status command again to see how the repository status has changed:
++1.3 Adding & Committing
++
++I created a file called octocat.txt in the octobox repository for you (as you can see in the browser below).
++
++You should run the git status command again to see how the repository status has changed:
++1.3 Adding & Committing
++
++I created a file called octocat.txt in the octobox repository for you (as you can see in the browser below).
++
++You should run the git status command again to see how the repository status has changed:
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ pwd
+/home/ucsp/git-repo1
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git add hola.txt
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git commit -m "Mi segundo commit"
+[master e453f86] Mi segundo commit
+ 1 file changed, 15 insertions(+)
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git status
+En la rama master
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir lo que se ha de ejecutar)
+
+	hola.txt~
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git log
+commit e453f8621ece3b1e9f496bec76e7662eaa82d13a
+Author: ucsp <jerikerl10@gmail.com>
+Date:   Sat Apr 2 13:24:07 2016 -0500
+
+    Mi segundo commit
+
+commit 183287c63ba58d58fe1d57af0f435ba3892889f0
+Author: ucsp <jerikerl10@gmail.com>
+Date:   Sat Apr 2 13:20:12 2016 -0500
+
+    Mi primir commit
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ pwd
+/home/ucsp/git-repo1
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git remote add origin https://github.com/jesusveca/IS1-2016-1.git
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git push -u origin master
+Username for 'https://github.com': jerikerl10@gmail.com
+Password for 'https://jerikerl10@gmail.com@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 605 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/jesusveca/IS1-2016-1.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ git status
+En la rama master
+Your branch is up-to-date with 'origin/master'.
+
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir lo que se ha de ejecutar)
+
+	hola.txt~
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+ucsp@ucsp-ThinkCentre-M73z:~/git-repo1$ 
+
